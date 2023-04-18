@@ -1,5 +1,3 @@
-#RGB
-
 import cv2
 
 # trackbar function
@@ -12,7 +10,7 @@ cv2.setTrackbarPos('threshold', 'Binary', 127)
 
 #input image
 img_color = cv2.imread('before.jpg', cv2.IMREAD_COLOR)
-img_gray = cv2.cvtColor(img_color ,cv2.COLOR_BGR2GRAY)
+img_gray = cv2.cvtColor(img_color, cv2.COLOR_BGR2GRAY)
 
 while(True):
     low = cv2.getTrackbarPos('threshold', 'Binary')
